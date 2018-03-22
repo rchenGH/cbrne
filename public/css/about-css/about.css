@@ -1,0 +1,52 @@
+.mission-body{
+  padding-top: 100px;
+  padding-bottom: 50px
+}
+
+.about-body{
+  padding-top: 50px;
+  padding-bottom: 50px
+}
+
+.about-body h1, .mission-body h1{
+  text-align: center;
+  padding-bottom: 20px;
+  color: rgba(0, 75, 150, 1);
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+.about-body p, li, .mission-body{
+  text-align: justify;
+  font-family: 'Lato', sans-serif;
+}
+
+@media only screen and (min-width: 421px){
+
+  .about-body h1, .mission-body h1{
+    text-align: center
+  }
+
+
+  .about-body h5, .mission-body h5{
+    display:none
+  }
+}
+
+@media only screen and (max-width: 420px){
+
+  .mission-body{
+    padding-top: 50px;
+    padding-bottom: 50px
+  }
+  .about-body h5, .mission-body h5{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 30px;
+  }
+
+  .about-body h1, .mission-body h1{
+    display:none
+    }
+}

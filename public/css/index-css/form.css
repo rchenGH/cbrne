@@ -1,0 +1,105 @@
+.form-background{
+  background-color: rgba(245,245,245,1);
+  border: solid 10px rgba(255,255,255,1);
+}
+
+form{
+  margin: 5%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3%;
+  background-color: rgba(255,255,255,1);
+  border-top-color: rgba(150,150,150,0.4);
+  border-left-color: rgba(150,150,150,0.4);
+  border-right: rgba(30,30,30,0.4);
+  border-bottom: rgba(30,30,30,0.4);
+  z-index:5;
+  max-width: 450px;
+}
+
+.bottom-text{
+  height: 40vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+
+.contact-header{
+  text-align: center;
+  color: rgba(0, 75, 150, 1);
+  font-weight: lighter;
+}
+
+.rule{
+  background-color: rgba(0, 75, 150, 0.5);
+  width: 90%;
+}
+
+input[type="text"]{
+  background-color: rgba(0, 75, 150, 0.1);
+  color: rgba(0, 75, 150, 1);;
+  border-color: rgba(25,150,170,0);
+
+  border-radius: 0;
+}
+
+input[type="text"]::-webkit-input-placeholder {
+  color: rgba(150,150,150,1);
+  font-size: 0.8em;
+}
+
+
+
+input[type=text]:focus {
+  background-color: rgba(0, 75, 150, 0.3);
+  color: rgba(0, 75, 150, 0.7);
+  border-width:normal;
+  border-spacing: 10px;
+  border-color: rgba(255,255,255,0.5);
+  outline: 0;
+}
+
+
+#form-submit{
+  background-color: rgba(0, 75, 150, 0.8);
+  color: rgba(255,255,255,0.7);
+  border-color: rgba(0,0,0,0);
+  width: 100%;
+  margin-left: auto;
+  font-weight: lighter;
+  margin-top: 10px;
+  border-radius: 0px;
+}
+
+#form-submit:hover{
+  background-color: rgba(0, 75, 150, 1);;
+  color: rgba(255,255,255,1);
+  margin-left: auto;
+  border-width: normal;
+  font-weight: lighter;
+  margin-top: 10px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+
+#form-submit:focus{
+  outline: 0;
+  border-color: rgba(0,0,0,0);
+  background-color: rgba(0, 75, 150, 0.8);
+  color: rgba(255,255,255,1);
+}
+
+#form-submit:active{
+  outline: 0;
+  background-color: rgba(255,255,255,1);
+  color: rgba(0, 75, 150, 1);;
+
+}
+
+#form-submit:visited{
+  outline: 0;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0, 75, 150, 1);;
+}

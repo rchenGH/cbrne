@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CBRNe Response Equipment</title>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+      crossorigin="anonymous">
+    </script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/index-css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/services-css/services.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich|Baloo|Squada+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyClOs9CSuFcTGsqDRuVdnq8nIGyxVC50vM",
+        authDomain: "cbrne-a2a9b.firebaseapp.com",
+        databaseURL: "https://cbrne-a2a9b.firebaseio.com",
+        projectId: "cbrne-a2a9b",
+        storageBucket: "cbrne-a2a9b.appspot.com",
+        messagingSenderId: "621761494751"
+      };
+      firebase.initializeApp(config);
+    </script>
+  </head>
+  <body data-spy='scroll' data-target="#navScrollspy">
+    <nav class="navbar navbar-expand-md fixed-top" id="navigation">
+        <a class="navbar-brand brand" id="header" href="../public/index.html"><img src="images/logo.png" id="nav-logo"></a>
+      </img>
+      <div class="cbrne">
+        <span class="c">C</span>
+        <span class="b">B</span>
+        <span class="r">R</span>
+        <span class="n">N</span>
+        <span class="e">e</span>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        MENU
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../public/index.html">HOME <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../public/about.html">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../public/services.html">SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../public/contact.html">CONTACT US</a>
+          </li>
+        </ul>
+      </div>
+
+
+
+    </nav>
+    <div class="container-fluid spy-container">
+      <ul class="nav nav-tabs" id="navScrollspy">
+        <li class="nav-item">
+          <a href="#pp-section" class="nav-link">PPE</a>
+        </li>
+        <li class="nav-item">
+          <a href="#spill-section" class="nav-link">SPILL</a>
+        </li>
+        <li class="nav-item">
+          <a href="#remediation-section" class="nav-link">REMEDIATION</a>
+        </li>
+        <li class="nav-item">
+          <a href="#training-section" class="nav-link">TRAINING</a>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="container-fluid service-container">
+      <div class="row">
+        <p class="intro">
+          We bring together an international global network spanning all continents with
+          primary focus on China, Africa, the Middle Eastern countries with support for North &
+          South America, plus Australasia.
+        </p>
+      </div>
+
+      <div class="row">
+      <div class="col-md-12">
+        <ul class="industry-list row">
+          <li style="background-image: url(images/services-images/gallery/oil-gas.jpg)";><p>OIL & GAS</p></li>
+          <li style="background-image: url(images/services-images/gallery/hydro.jpg)";>HYDRO</li>
+          <li style="background-image: url(images/services-images/gallery/nuclear.jpg)";>NUCLEAR</li>
+          <li style="background-image: url(images/services-images/gallery/petrochem.jpg)";>PETROCHEMICAL</li>
+          <li style="background-image: url(images/services-images/gallery/spill-response.jpg)";>OIL SPILL RESPONSE</li>
+          <li style="background-image: url(images/services-images/gallery/mining.jpg)";>MINING</li>
+          <li style="background-image: url(images/services-images/gallery/forestry.jpg)";>FORESTRY</li>
+          <li style="background-image: url(images/services-images/gallery/ship.jpg)";>SHIPBUILDING</li>
+          <li style="background-image: url(images/services-images/gallery/automotive.jpg)";>AUTOMOTIVE</li>
+          <li style="background-image: url(images/services-images/gallery/aviation.jpg)";>AVIATION</li>
+          <li style="background-image: url(images/services-images/gallery/rail.jpg)";>RAILWAY FACILITIES</li>
+          <li style="background-image: url(images/services-images/gallery/bus.jpg)";>BUS TERMINAL</li>
+          <li style="background-image: url(images/services-images/gallery/military.jpg)";>MILITARY</li>
+          <li style="background-image: url(images/services-images/gallery/fire.jpg)";>FIRE DEPARTMENT</li>
+          <li style="background-image: url(images/services-images/gallery/police.jpg)";>POLICE</li>
+          <li style="background-image: url(images/services-images/gallery/agriculture.jpg)";>AGRICULTURE</li>
+          <li style="background-image: url(images/services-images/gallery/marine.jpg)";>MARINE</li>
+          <li style="background-image: url(images/services-images/gallery/harbour.jpg)";>HARBOUR AUTHORITY</li>
+          <li style="background-image: url(images/services-images/gallery/coastguard.jpg)";>COAST GUARD</li>
+          <li style="background-image: url(images/services-images/gallery/industrial.jpg)";>INDUSTRIAL</li>
+          <li style="background-image: url(images/services-images/gallery/laboratory.jpg)";>LABRATORY</li>
+          <li style="background-image: url(images/services-images/gallery/hospitals.jpg)";>HOSPITALS</li>
+          <li style="background-image: url(images/services-images/gallery/university.jpg)";>UNIVERSITIES</li>
+          <li style="background-image: url(images/services-images/gallery/disaster.jpg)";>DISASTER AND EMERGENCY</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+    <hr>
+
+      <div class="container">
+        <div id="pp-section" class="row service-section">
+          <div class="col-md-12">
+            <h1>PERSONAL PROTECTIVE SAFETY & RESPONSE </h1>
+          </div>
+          <div class="col-md-12">
+            <h4>SAFETY - RESPONSE - SECURITY</h4>
+          </div>
+
+          <div class="col-md-4 gallery-pic" style="background-image: url(images/services-images/ppe/construction.jpg)";>
+          </div>
+          <div class="col-md-4 gallery-pic" style="background-image: url(images/services-images/ppe/face-mask.jpg)";>
+          </div>
+          <div class="col-md-4 gallery-pic" style="background-image: url(images/services-images/ppe/prep.jpg)";>
+          </div>
+          <div class="col-md-4 gallery-pic" style="background-image: url(images/services-images/ppe/pressure-wash.jpg)";>
+          </div>
+          <div class="col-md-4 gallery-pic" style="background-image: url(images/services-images/ppe/waste.jpg)";>
+          </div>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div class="container">
+        <div id="spill-section" class="row service-section">
+            <div class="col-md-12">
+              <h1>SPILL CONTROL</h1>
+            </div>
+            <div class="col-md-12">
+              <h4>SPILL CONTROL - COMPLIANCE - SOLUTIONS</h4>
+            </div>
+
+            <div class="col-md-12">
+              <table style="width:100%">
+                <tr>
+                  <th class="table-head">TARGET MARKET SEGMENTS</th>
+                  <th class="table-head">ENVIRONMENTAL SPILL APPLICATIONS</th>
+                  <th class="table-head">SPILL CONTROL PRODUCTS & SOLUTIONS</th>
+                </tr>
+                <tr>
+                  <td class="table-data">Oil and Gas - Hydro - Nuclear</td>
+                  <td class="table-data">Refineries, Exploration, Production Facilities, Tankers, Pipelines</td>
+                  <td class="table-data">Sorbent Boom, Rolls, Pads, Socks/Pillows
+                      Containment Berms, Spill Kits</td>
+                </tr>
+                <tr>
+                  <td class="table-data">Marine - Oil Spill Response</td>
+                  <td class="table-data">Oil Spill Response Vessels (OSRVs) and Platform Supply Vessels (PSVs)</td>
+                  <td class="table-data">Containment Boom, Sorbent Boom, Pads</td>
+                </tr>
+                <tr>
+                  <td class="table-data">Construction</td>
+                  <td class="table-data">Environmental Compliance, Heavy Equipment, Maintenance
+                    Remediation, Hazardous Material Collection, Land Based First Response</td>
+                  <td class="table-data">Sorbent Boom, Rolls, Pads, Socks/Pillows, Containment
+                    Berms, Spill Kits, Salvage Drums, Spill Pallets, Flat Socks</td>
+                </tr>
+                <tr>
+                  <td class="table-data">Mining & Forestry</td>
+                  <td class="table-data">Environmental Compliance, Heavy Equipment, Maintenance, Remediation,
+                    Hazardous, Material Collection, Land Based First Response</td>
+                  <td class="table-data">Sorbent Boom, Rolls, Pads, Socks/Pillows, Containment
+                    Berms, Spill Kits, Salvage Drums, Spill Pallets, Flat Socks</td>
+                </tr>
+                <tr>
+                  <td class="table-data">Shipbuilding</td>
+                  <td class="table-data">Vessel Repair and Maintenance, Manufacturing - Housekeeping
+                    Near & Offshore Refueling </td>
+                  <td class="table-data">Containment Boom, Sorbent Boom, Rolls, Pads, Spill Kits</td>
+                </tr>
+                <tr>
+                  <td class="table-data">Aviation - Automotive - Railway</td>
+                  <td class="table-data">Environmental Compliance & Land Based Emergency Spills
+                    during Refueling & Maintenance</td>
+                  <td class="table-data">Sorbent Boom, STATIC RESISTANT - Rolls, Pads, Socks/Pillows,
+                    Spill Kits, Containment Berms, Flat Socks</td>
+                </tr>
+                <tr>
+                  <td class="table-data">Military - Fire Departments - Police</td>
+                  <td class="table-data">Environmental Compliance, Heavy Equipment, Maintenance
+                    Remediation, Hazardous Material Collection, Land Based First Response</td>
+                  <td class="table-data">Sorbent Boom, Rolls, Pads, Socks/Pillows, Containment
+                    Berms, Spill Kits, Salvage Drums, Spill Pallets, Flat Socks</td>
+                </tr>
+                <tr>
+                  <td class="table-data">Agriculture</td>
+                  <td class="table-data">Environmental Compliance, Heavy Equipment, Maintenance
+                    Remediation, Hazardous Material Collection, Land Based First Response</td>
+                  <td class="table-data">Sorbent Boom, Rolls, Pads, Socks/Pillows, Containment
+                    Berms, Spill Kits, Salvage Drums, Spill Pallets, Flat Socks</td>
+                </tr>
+                <tr>
+                  <td class="table-data">Harbor Authority - Coast Guard </td>
+                  <td class="table-data">Oil Spill Response, Spill Control & Clean Up</td>
+                  <td class="table-data">Containment Boom, Sorbent Boom, Pads</td>
+                </tr>
+                <tr>
+                  <td class="table-data">Industrial</td>
+                  <td class="table-data">Hydraulics, Equipment Maintenance, Repair (Fuel, Chemical, Hazmat),
+                    Environmental Compliance, Hazardous Material Collection</td>
+                  <td class="table-data">Sorbent Boom, Rolls, Pads, Socks/Pillows, Containment
+                    Berms, Spill Kits, Salvage Drums, Spill Pallets, Flat Socks</td>
+                </tr>
+                <tr>
+                  <td class="table-data">Laboratory - Hospitals - Universities </td>
+                  <td class="table-data">Hazmat - Chemical for Medical, Laboratory, Institutional
+                    Hospital & Biotech Research Facilities</td>
+                  <td class="table-data">Sorbent Pads, Rolls, Stay In Place Absorbent Rolls, Flat
+                    Socks, Spill Kits, Lab Pack Containers, Salvage Drums</td>
+                </tr>
+              </table>
+            </div>
+
+        </div>
+
+      </div>
+
+      <div class="container">
+        <div id="remediation-section" class="row service-section">
+          <div class="col-md-12">
+            <h1>REMEDIATION</h1>
+          </div>
+          <div class="col-md-12">
+            <h4>REMEDIATION - ASSESSMENTS - SOLUTIONS</h4>
+          </div>
+
+          <div class="col-md-4 gallery-pic" style="background-image: url(images/services-images/remediation/dig.jpg)";>
+          </div>
+          <div class="col-md-4 gallery-pic" style="background-image: url(images/services-images/remediation/frickley.jpg)";>
+          </div>
+          <div class="col-md-4 gallery-pic" style="background-image: url(images/services-images/remediation/gasworks.jpg)";>
+          </div>
+          <div class="col-md-4 gallery-pic" style="background-image: url(images/services-images/remediation/mine.jpg)";>
+          </div>
+          <div class="col-md-4 gallery-pic" style="background-image: url(images/services-images/remediation/site.jpg)";>
+          </div>
+          <div class="col-md-4 gallery-pic" style="background-image: url(images/services-images/remediation/west-float.jpg)";>
+          </div>
+        </div>
+
+      </div>
+
+
+      <hr>
+
+      <div class="container">
+        <div id="training-section" class="row service-section">
+          <div class="col-md-12">
+            <h1>TRAINING</h1>
+          </div>
+          <div class="col-md-12">
+            <h4>MULTILINGUAL TRAINING - WEB-BASED or ONSITE</h4>
+          </div>
+
+          <div class="col-md-4 gallery-pic" style="background-image: url(images/services-images/training/training-1.jpg)";>
+          </div>
+          <div class="col-md-4 gallery-pic" style="background-image: url(images/services-images/training/training-2.jpg)";>
+          </div>
+          <div class="col-md-4 gallery-pic" style="background-image: url(images/services-images/training/training-3.jpg)";>
+          </div>
+          <div class="col-md-4 gallery-pic" style="background-image: url(images/services-images/training/training-4.jpg)";>
+          </div>
+          <div class="col-md-4 gallery-pic" style="background-image: url(images/services-images/training/training-5.jpg)";>
+          </div>
+          <div class="col-md-4 gallery-pic" style="background-image: url(images/services-images/training/training-6.jpg)";>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+  </body>
+</html>

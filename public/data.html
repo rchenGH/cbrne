@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+
+      <!-- update the version number as needed -->
+      <script defer src="/__/firebase/4.3.0/firebase-app.js"></script>
+      <!-- include only the Firebase features as you need -->
+      <script defer src="/__/firebase/4.3.0/firebase-auth.js"></script>
+      <script defer src="/__/firebase/4.3.0/firebase-database.js"></script>
+      <script defer src="/__/firebase/4.3.0/firebase-messaging.js"></script>
+      <script defer src="/__/firebase/4.3.0/firebase-storage.js"></script>
+      <!-- initialize the SDK after all desired features are loaded -->
+      <script defer src="/__/firebase/init.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+
+      <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyClOs9CSuFcTGsqDRuVdnq8nIGyxVC50vM",
+          authDomain: "cbrne-a2a9b.firebaseapp.com",
+          databaseURL: "https://cbrne-a2a9b.firebaseio.com",
+          projectId: "cbrne-a2a9b",
+          storageBucket: "cbrne-a2a9b.appspot.com",
+          messagingSenderId: "621761494751"
+        };
+        firebase.initializeApp(config);
+      </script>
+
+      <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+      </script>
+      <script src="script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Armata|Heebo|Orbitron|Oswald|Russo+One" rel="stylesheet">
+  </head>
+  <body>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Phone Number</th>
+        </tr>
+      </thead>
+      <tbody id="data_body">
+        <tr>
+          <th scope="row"></th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+
+  </body>
+</html>

@@ -1,0 +1,75 @@
+body {
+  margin: 0px;
+  margin-top: 50px;
+  background-color: rgba(60,60,60,0);
+}
+
+
+.container-fluid {
+  padding: 0;
+}
+
+.row{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.column-1{
+  display: inline;
+  width: calc((100%/12));
+}
+
+.column-2{
+  display: inline;
+  width: calc((100%/12)*2);
+}
+
+.column-3{
+  display: inline;
+  width: calc((100%/12)*3);
+}
+
+.column-4{
+  display: inline;
+  width: calc((100%/12)*4);
+}
+
+.column-5{
+  display: inline;
+  width: calc((100%/12)*5);
+}
+
+.column-6{
+  display: inline;
+  width: calc((100%/12)*6);
+}
+
+.column-7{
+  display: inline;
+  width: calc((100%/12)*7);
+}
+
+.column-8{
+  display: inline;
+  width: calc((100%/12)*8);
+}
+
+.column-9{
+  display: inline;
+  width: calc((100%/12)*9);
+}
+
+.column-10{
+  display: inline;
+  width: calc((100%/12)*10);
+}
+
+.column-11{
+  display: inline;
+  width: calc((100%/12)*11);
+}
+
+.column-12{
+  display: inline;
+  width: 100%;
+}
