@@ -16,6 +16,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/index-css/style.css">
     <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+
     <link rel="stylesheet" type="text/css" href="css/index-css/description.css">
     <link rel="stylesheet" type="text/css" href="css/about-css/about.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -25,76 +27,66 @@
 
     <script src="js/parallax.min.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
     <script>
       // Initialize Firebase
       var config = {
-        apiKey: "AIzaSyClOs9CSuFcTGsqDRuVdnq8nIGyxVC50vM",
-        authDomain: "cbrne-a2a9b.firebaseapp.com",
-        databaseURL: "https://cbrne-a2a9b.firebaseio.com",
-        projectId: "cbrne-a2a9b",
-        storageBucket: "cbrne-a2a9b.appspot.com",
-        messagingSenderId: "621761494751"
+        apiKey: "AIzaSyDmLkaoMcqrIQa890Waanw9k-hVUAT9bfg",
+        authDomain: "cbrne-90250.firebaseapp.com",
+        databaseURL: "https://cbrne-90250.firebaseio.com",
+        projectId: "cbrne-90250",
+        storageBucket: "cbrne-90250.appspot.com",
+        messagingSenderId: "866217580737"
       };
       firebase.initializeApp(config);
     </script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md fixed-top" id="navigation">
-        <a class="navbar-brand brand" id="header" href="../public/index.html"><img src="images/logo.png" id="nav-logo"></a>
+    <nav class="navbar navbar-expand-md fixed-top container-fluid" id="navigation">
+        <a class="navbar-brand brand" id="header" href="index.html"><img src="images/cbrne-title.png" id="nav-logo"></a>
       </img>
-      <div class="cbrne">
-        <span class="c">C</span>
-        <span class="b">B</span>
-        <span class="r">R</span>
-        <span class="n">N</span>
-        <span class="e">e</span>
-      </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         MENU
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav nav_menu">
           <li class="nav-item">
-            <a class="nav-link" href="../public/index.html">HOME <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../public/about.html">ABOUT</a>
+            <a class="nav-link" href="about.html">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../public/services.html">SERVICES</a>
+            <a class="nav-link" href="services.html">SERVICES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../public/contact.html">CONTACT US</a>
+            <a class="nav-link" href="contact.html">CONTACT US</a>
           </li>
         </ul>
       </div>
 
     </nav>
 
-    <article class='container mission-body'>
-      <h1>- MISSION -</h1>
-      <h5>- MISSION -</h5>
+    <article class='container-fluid mission-body'>
+      <h1>MISSION</h1>
+      <h5>MISSION</h5>
       <p>
         CBRNe Response CANADA is a service-oriented consultative group of companies dedicated to
         developing efficient, environmentally conscious, and economically viable alternatives and expertise to
         rigorously respond to environmental disasters. Using existing infrastructure, we eliminate the need for time
         consuming sourcing because we focus our efforts on solutions for our clients directly, covering all aspects
         of Occupational Safety, Security, Hazardous Environmental Response, Spill Control Compliance
-        and Remediation. We intend to make enough profit to generate a fair return and to finance continued
-        growth through revenue on Fee-Based Training Programs through which will facilitate Equipment Supply,
-        Service & Maintenance Contracts complete with ongoing follow up customer support to ensure programs
-        are both well understood, projects are successfully implemented and equipment is commissioned to the
+        and Remediation. We provide Web-Based or Onsite Training Programs through which facilitate recommendations
+        on Equipment Supply, Service & Maintenance Contracts complete with ongoing follow up customer support to ensure
+        programs are both well understood, projects are successfully implemented and equipment is commissioned to the
         satisfaction of our clients.
       </p>
     </article>
 
-    <hr>
-
-    <article class="container about-body">
-      <h1>- ABOUT -</h1>
-      <h5>- ABOUT -</h5>
+    <article class="container-fluid about-body">
+      <h1>ABOUT</h1>
+      <h5>ABOUT</h5>
       <p>
         CBRNe Response CANADA started in 2008 and developed into an established operation in late
         2017 to bring together an international global network spanning all continents with primary focus
@@ -132,6 +124,14 @@
 
     </article>
 
+    <div class="footer-nav fixed-bottom">
+      <div class =" site-info">
+        <div class="copyright-column">CBRNe</div>
+        <div class="author-column">
+          Site By Raymond Chen
+        </div>
+      </div>
 
+    </div>
   </body>
 </html>

@@ -32,7 +32,9 @@
   font-size: 30px;
   text-align: center;
   padding-top: 50px;
+  padding-left: 30px;
   font-family: 'Lato', sans-serif;
+  letter-spacing: 0.5px;
 
 }
 
@@ -41,12 +43,13 @@
   padding-left: 40px;
   color: rgba(255,255,255,1);
   font-weight: 200;
+  letter-spacing: 5px;
 
 }
 
 .cbrne-snippet:first-child {
   padding-top: 55px;
-  padding-left: 40px;
+
 }
 
 
@@ -59,16 +62,19 @@
   }
 }
 
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 460px){
   .cbrne-snippet{
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 10px;
   }
   .snippet{
-    font-size: 25px;
+    font-size: 20px;
+
   }
   .background-img{
     height: 700px;
-    padding-top: 200px;
-    margin-top: -245px;
+    padding-top: 250px;
+    margin-top: -300px;
   }
 }

@@ -1,11 +1,15 @@
 .mission-body{
-  padding-top: 100px;
-  padding-bottom: 50px
+  background-color: rgba(245,245,245,1);
+  border-bottom: 20px rgba(255,255,255,1) solid;
+  padding: 100px 70px 50px 70px;
+  letter-spacing: 1px;
+
 }
 
 .about-body{
-  padding-top: 50px;
-  padding-bottom: 50px
+  padding: 60px 70px 60px 70px;
+  background-color: rgba(245,245,245,1);
+  letter-spacing: 1px;
 }
 
 .about-body h1, .mission-body h1{
@@ -13,6 +17,9 @@
   padding-bottom: 20px;
   color: rgba(0, 75, 150, 1);
   font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  letter-spacing: 2px;
+
 }
 
 
@@ -20,6 +27,7 @@
 .about-body p, li, .mission-body{
   text-align: justify;
   font-family: 'Lato', sans-serif;
+  color: rgba(50,50,100,1);
 }
 
 @media only screen and (min-width: 421px){

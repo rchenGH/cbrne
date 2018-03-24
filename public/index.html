@@ -16,6 +16,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/index-css/style.css">
     <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/index-css/body.css">
     <link rel="stylesheet" type="text/css" href="css/index-css/form.css">
     <link rel="stylesheet" type="text/css" href="css/index-css/description.css">
@@ -25,31 +26,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
     <script>
       // Initialize Firebase
       var config = {
-        apiKey: "AIzaSyClOs9CSuFcTGsqDRuVdnq8nIGyxVC50vM",
-        authDomain: "cbrne-a2a9b.firebaseapp.com",
-        databaseURL: "https://cbrne-a2a9b.firebaseio.com",
-        projectId: "cbrne-a2a9b",
-        storageBucket: "cbrne-a2a9b.appspot.com",
-        messagingSenderId: "621761494751"
+        apiKey: "AIzaSyDmLkaoMcqrIQa890Waanw9k-hVUAT9bfg",
+        authDomain: "cbrne-90250.firebaseapp.com",
+        databaseURL: "https://cbrne-90250.firebaseio.com",
+        projectId: "cbrne-90250",
+        storageBucket: "cbrne-90250.appspot.com",
+        messagingSenderId: "866217580737"
       };
       firebase.initializeApp(config);
     </script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md fixed-top" id="navigation">
-        <a class="navbar-brand brand" id="header" href="../public/index.html"><img src="images/logo.png" id="nav-logo"></a>
+    <nav class="navbar navbar-expand-md fixed-top container-fluid" id="navigation">
+        <a class="navbar-brand brand" id="header" href="index.html"><img src="images/cbrne-title.png" id="nav-logo"></a>
       </img>
-      <div class="cbrne">
-        <span class="c">C</span>
-        <span class="b">B</span>
-        <span class="r">R</span>
-        <span class="n">N</span>
-        <span class="e">e</span>
-      </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         MENU
       </button>
@@ -57,16 +51,16 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav nav_menu">
           <li class="nav-item">
-            <a class="nav-link" href="../public/index.html">HOME <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../public/about.html">ABOUT</a>
+            <a class="nav-link" href="about.html">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../public/services.html">SERVICES</a>
+            <a class="nav-link" href="services.html">SERVICES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../public/contact.html">CONTACT US</a>
+            <a class="nav-link" href="contact.html">CONTACT US</a>
           </li>
         </ul>
       </div>
@@ -74,6 +68,7 @@
     </nav>
 
     <main class="container-fluid background-container" style="margin-top: 100px">
+
       <div class="row top-row">
         <article class="col-sm-12 col-md-12 col-xs-12 col-lg-12 background-img" parallax-window style="min-width:none" data-parallax="scroll"
                 data-image-src="images/front.jpg" data-z-index="0">
@@ -98,7 +93,7 @@
             Hazardous Environmental Response, Spill Control Compliance and Remediation.</p>
           <p>Hazardous chemical spills do occur, so we need environmentally responsible solutions.</p>
           <p>We provide global procurement, a distribution & consultative network, and multilingual web-based or onsite training.</p>
-          <h5>QUALITY... it is non-negotiable</h5>
+          <h5>EXELLENCE it is non-negotiable</h5>
           <p> … Our Mission is to offer the Expertise to Rigorously Respond to Environmental Disasters.</p>
           <p>Our distribution and supplier network provides uncompromised support.</p>
           <p>We bring together an international global network spanning all continents with
@@ -146,14 +141,15 @@
       </div>
     </main>
 
-    <main class="container-fluid">
-      <div class="row top-row">
-
-        <div class="col-md-12 team">
-          <p></p>
+    <div class="footer-nav fixed-bottom">
+      <div class ="site-info">
+        <div class="copyright-column">CBRNe</div>
+        <div class="author-column">
+          Site By Raymond Chen
         </div>
       </div>
-    </main>
+
+    </div>
 
   </body>
 </html>

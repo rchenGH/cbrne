@@ -16,6 +16,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/index-css/style.css">
     <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+
     <link rel="stylesheet" type="text/css" href="css/services-css/services.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Aldrich|Baloo|Squada+One" rel="stylesheet">
@@ -24,56 +26,47 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
     <script>
       // Initialize Firebase
       var config = {
-        apiKey: "AIzaSyClOs9CSuFcTGsqDRuVdnq8nIGyxVC50vM",
-        authDomain: "cbrne-a2a9b.firebaseapp.com",
-        databaseURL: "https://cbrne-a2a9b.firebaseio.com",
-        projectId: "cbrne-a2a9b",
-        storageBucket: "cbrne-a2a9b.appspot.com",
-        messagingSenderId: "621761494751"
+        apiKey: "AIzaSyDmLkaoMcqrIQa890Waanw9k-hVUAT9bfg",
+        authDomain: "cbrne-90250.firebaseapp.com",
+        databaseURL: "https://cbrne-90250.firebaseio.com",
+        projectId: "cbrne-90250",
+        storageBucket: "cbrne-90250.appspot.com",
+        messagingSenderId: "866217580737"
       };
       firebase.initializeApp(config);
     </script>
   </head>
   <body data-spy='scroll' data-target="#navScrollspy">
-    <nav class="navbar navbar-expand-md fixed-top" id="navigation">
-        <a class="navbar-brand brand" id="header" href="../public/index.html"><img src="images/logo.png" id="nav-logo"></a>
+    <nav class="navbar navbar-expand-md fixed-top container-fluid" id="navigation">
+        <a class="navbar-brand brand" id="header" href="index.html"><img src="images/cbrne-title.png" id="nav-logo"></a>
       </img>
-      <div class="cbrne">
-        <span class="c">C</span>
-        <span class="b">B</span>
-        <span class="r">R</span>
-        <span class="n">N</span>
-        <span class="e">e</span>
-      </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         MENU
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav nav_menu">
           <li class="nav-item">
-            <a class="nav-link" href="../public/index.html">HOME <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../public/about.html">ABOUT</a>
+            <a class="nav-link" href="about.html">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../public/services.html">SERVICES</a>
+            <a class="nav-link" href="services.html">SERVICES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../public/contact.html">CONTACT US</a>
+            <a class="nav-link" href="contact.html">CONTACT US</a>
           </li>
         </ul>
       </div>
 
-
-
     </nav>
-    <div class="container-fluid spy-container">
+    <div class="container-fluid spy-container-expanded">
       <ul class="nav nav-tabs" id="navScrollspy">
         <li class="nav-item">
           <a href="#pp-section" class="nav-link">PPE</a>
@@ -104,38 +97,38 @@
       <div class="col-md-12">
         <ul class="industry-list row">
           <li style="background-image: url(images/services-images/gallery/oil-gas.jpg)";><p>OIL & GAS</p></li>
-          <li style="background-image: url(images/services-images/gallery/hydro.jpg)";>HYDRO</li>
-          <li style="background-image: url(images/services-images/gallery/nuclear.jpg)";>NUCLEAR</li>
-          <li style="background-image: url(images/services-images/gallery/petrochem.jpg)";>PETROCHEMICAL</li>
-          <li style="background-image: url(images/services-images/gallery/spill-response.jpg)";>OIL SPILL RESPONSE</li>
-          <li style="background-image: url(images/services-images/gallery/mining.jpg)";>MINING</li>
-          <li style="background-image: url(images/services-images/gallery/forestry.jpg)";>FORESTRY</li>
-          <li style="background-image: url(images/services-images/gallery/ship.jpg)";>SHIPBUILDING</li>
-          <li style="background-image: url(images/services-images/gallery/automotive.jpg)";>AUTOMOTIVE</li>
-          <li style="background-image: url(images/services-images/gallery/aviation.jpg)";>AVIATION</li>
-          <li style="background-image: url(images/services-images/gallery/rail.jpg)";>RAILWAY FACILITIES</li>
-          <li style="background-image: url(images/services-images/gallery/bus.jpg)";>BUS TERMINAL</li>
-          <li style="background-image: url(images/services-images/gallery/military.jpg)";>MILITARY</li>
-          <li style="background-image: url(images/services-images/gallery/fire.jpg)";>FIRE DEPARTMENT</li>
-          <li style="background-image: url(images/services-images/gallery/police.jpg)";>POLICE</li>
-          <li style="background-image: url(images/services-images/gallery/agriculture.jpg)";>AGRICULTURE</li>
-          <li style="background-image: url(images/services-images/gallery/marine.jpg)";>MARINE</li>
-          <li style="background-image: url(images/services-images/gallery/harbour.jpg)";>HARBOUR AUTHORITY</li>
-          <li style="background-image: url(images/services-images/gallery/coastguard.jpg)";>COAST GUARD</li>
-          <li style="background-image: url(images/services-images/gallery/industrial.jpg)";>INDUSTRIAL</li>
-          <li style="background-image: url(images/services-images/gallery/laboratory.jpg)";>LABRATORY</li>
-          <li style="background-image: url(images/services-images/gallery/hospitals.jpg)";>HOSPITALS</li>
-          <li style="background-image: url(images/services-images/gallery/university.jpg)";>UNIVERSITIES</li>
-          <li style="background-image: url(images/services-images/gallery/disaster.jpg)";>DISASTER AND EMERGENCY</li>
+          <li style="background-image: url(images/services-images/gallery/hydro.jpg)";><p>HYDRO</p></li>
+          <li style="background-image: url(images/services-images/gallery/nuclear.jpg)";><p>NUCLEAR</p></li>
+          <li style="background-image: url(images/services-images/gallery/petrochem.jpg)";><p>PETROCHEMICAL</p></li>
+          <li style="background-image: url(images/services-images/gallery/spill-response.jpg)";><p>OIL SPILL RESPONSE</p></li>
+          <li style="background-image: url(images/services-images/gallery/mining.jpg)";><p>MINING</p></li>
+          <li style="background-image: url(images/services-images/gallery/forestry.jpg)";><p>FORESTRY</p></li>
+          <li style="background-image: url(images/services-images/gallery/ship.jpg)";><p>SHIPBUILDING</p></li>
+          <li style="background-image: url(images/services-images/gallery/automotive.jpg)";><p>AUTOMOTIVE</p></li>
+          <li style="background-image: url(images/services-images/gallery/aviation.jpg)";><p>AVIATION</p></li>
+          <li style="background-image: url(images/services-images/gallery/rail.jpg)";><p>RAILWAY FACILITIES</p></li>
+          <li style="background-image: url(images/services-images/gallery/bus.jpg)";><p>BUS TERMINAL</p></li>
+          <li style="background-image: url(images/services-images/gallery/military.jpg)";><p>MILITARY</p></li>
+          <li style="background-image: url(images/services-images/gallery/fire.jpg)";><p>FIRE DEPARTMENT</p></li>
+          <li style="background-image: url(images/services-images/gallery/police.jpg)";><p>POLICE</p></li>
+          <li style="background-image: url(images/services-images/gallery/agriculture.jpg)";><p>AGRICULTURE</p></li>
+          <li style="background-image: url(images/services-images/gallery/marine.jpg)";><p>MARINE</p></li>
+          <li style="background-image: url(images/services-images/gallery/harbour.jpg)";><p>HARBOUR AUTHORITY</p></li>
+          <li style="background-image: url(images/services-images/gallery/coastguard.jpg)";><p>COAST GUARD</p></li>
+          <li style="background-image: url(images/services-images/gallery/industrial.jpg)";><p>INDUSTRIAL</p></li>
+          <li style="background-image: url(images/services-images/gallery/laboratory.jpg)";><p>LABRATORY</p></li>
+          <li style="background-image: url(images/services-images/gallery/hospitals.jpg)";><p>HOSPITALS</p></li>
+          <li style="background-image: url(images/services-images/gallery/university.jpg)";><p>UNIVERSITIES</p></li>
+          <li style="background-image: url(images/services-images/gallery/disaster.jpg)";><p>DISASTER AND EMERGENCY</p></li>
         </ul>
       </div>
     </div>
   </div>
 
-    <hr>
 
-      <div class="container">
-        <div id="pp-section" class="row service-section">
+
+      <div class="container-fluid ppe-container">
+        <div id="pp-section" class="row service-section ppe-container">
           <div class="col-md-12">
             <h1>PERSONAL PROTECTIVE SAFETY & RESPONSE </h1>
           </div>
@@ -157,9 +150,9 @@
 
       </div>
 
-      <hr>
 
-      <div class="container">
+
+      <div class="container-fluid spill-container">
         <div id="spill-section" class="row service-section">
             <div class="col-md-12">
               <h1>SPILL CONTROL</h1>
@@ -253,7 +246,7 @@
 
       </div>
 
-      <div class="container">
+      <div class="container-fluid remediation-container">
         <div id="remediation-section" class="row service-section">
           <div class="col-md-12">
             <h1>REMEDIATION</h1>
@@ -279,9 +272,9 @@
       </div>
 
 
-      <hr>
 
-      <div class="container">
+
+      <div class="container-fluid training-container">
         <div id="training-section" class="row service-section">
           <div class="col-md-12">
             <h1>TRAINING</h1>
@@ -307,7 +300,15 @@
       </div>
 
     </div>
+    <div class="footer-nav fixed-bottom">
+      <div class =" site-info">
+        <div class="copyright-column">CBRNe</div>
+        <div class="author-column">
+          Site By Raymond Chen
+        </div>
+      </div>
 
+    </div>
 
 
 

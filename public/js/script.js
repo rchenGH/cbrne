@@ -7,7 +7,8 @@ $(document).ready(function(){
     }
   });
 
-  const firebaseRef = firebase.database().ref('client/');
+
+  const firebaseRef = firebase.database().ref('client');
 
   $("#form-submit").on('click', function(){
 
@@ -45,5 +46,6 @@ $(document).ready(function(){
     )
 
   })
+
 
 });
