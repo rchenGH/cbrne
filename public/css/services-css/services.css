@@ -44,7 +44,8 @@ body{
 
 .nav-tabs{
   border: 0px !important;
-  background-color: rgba(255,255,0);
+  background-color: rgba(50, 100, 150, 1);
+
   margin-top: 10px;
 }
 
@@ -192,24 +193,64 @@ body{
   .spy-container-expanded .nav-link{
     width: calc(98.5vw/4);
 }
+}
 
+@media only screen and (min-width: 531px) {
+  .spy-container-condensed{
+    display: none;
+  }
+
+}
 
 @media only screen and (max-width: 530px) {
   .spy-container-expanded{
     display: none;
   }
-
-
-.spy-container-expanded .nav-item{
-    margin: 0px;
+  .nav-tabs{
+    margin-top: 0px;
   }
-.spy-container-expanded .nav-link{
+
+
+  .spy-container-condensed{
+    position:fixed;
+    z-index: 4;
     width: 100vw;
-    margin: 0px;
-    border-bottom: 1px rgba(245, 245, 245, 1) solid;
-    letter-spacing: 3px
+    height: auto;
+    background-color: rgba(50, 100, 150, 1);
+    vertical-align: middle;
+  }
+
+  .spy-container-condensed .nav-link{
+    height: 70px;
+    line-height: 70px;
+    vertical-align: middle !important;
+    text-align: center;
+    padding: 0px;
+  }
+
+  .active{
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    border-radius: 0px !important;
+    border: none !important;
+  }
+
+
+  .spy-container-condensed .nav-item{
+    height: 70px;
+    vertical-align: middle;
+    width: 25vw;
+
+    margin-left: 0;
+    margin-right: 0;
 
   }
+
+    .spy-container-condensed .nav-item img{
+      height: 45px;
+      width: auto;
+
+    }
+
   .table-head{
     font-size: 0.8em
   }
@@ -219,11 +260,18 @@ body{
   }
 }
 
-@media only screen and (max-width: 460px) {
 
 
-  .spy-container-expanded{
-    margin-top: -50px;
+@media only screen and (max-width: 470px) {
+  .spy-container-condensed{
+    margin-top: -40px;
+
+  }
+
+
+  .service-container{
+    padding-top: 100px;
+    margin-top: -40px;
   }
 
   .table-head{

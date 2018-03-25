@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="6OE2fMZ0GOOV14nFrJkKoocOB67RU2nKWYfWPQ3lM9E" />
     <title>CBRNe Response Equipment</title>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -42,7 +43,7 @@
     <nav class="navbar navbar-expand-md fixed-top container-fluid" id="navigation">
         <a class="navbar-brand brand" id="header" href="index.html"><img src="images/cbrne-title.png" id="nav-logo"></a>
       </img>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <button id="menu-button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         MENU
       </button>
 
@@ -72,16 +73,16 @@
       <article class="maincontainer">
         <article class="thecard" ontouchstart="this.classList.toggle('hover');">
 
-          <div class="thefront container-fluid">
+          <div class="thefront container-fluid" style="background-image:url(images/contact-images/grey_sandbag.png)">
             <div class="row">
               <div class="column-6 face">
-                <img src="images/logo.png"/>
+                <img src="images/contact-images/logo.png"/>
               </div>
               <div class='column-6 contact-right'>
                 <div class='container-fluid'>
                   <div class="contact-info row">
                     <div class="column-3">
-                      <img src="images/head-icon.png" class="icon"/>
+                      <img src="images/contact-images/cbrne-icons/head-icon.png" class="icon"/>
                     </div>
                     <div class="column-9">
                       <p class="contact-data">Contact Us</p>
@@ -89,7 +90,7 @@
                   </div>
                   <div class="contact-info row">
                     <div class="column-3">
-                      <img src="images/phone-icon.png" class="icon"/>
+                      <img src="images/contact-images/cbrne-icons/phone-icon.png" class="icon"/>
                     </div>
                     <div class="column-9">
                       <p class="contact-data">+1.778.822.7024 </p>
@@ -97,7 +98,7 @@
                   </div>
                   <div class="contact-info row">
                     <div class="column-3">
-                      <img src="images/email-icon.png" class="icon"/>
+                      <img src="images/contact-images/cbrne-icons/email-icon.png" class="icon"/>
                     </div>
                     <div class="column-9">
                       <p class="contact-data">info@CBRNe.ca</p>
@@ -105,7 +106,7 @@
                   </div>
                   <div class="contact-info row">
                     <div class="column-3">
-                      <img src="images/globe-icon.png" class="icon"/>
+                      <img src="images/contact-images/cbrne-icons/globe-icon.png" class="icon"/>
                     </div>
                     <div class="column-9">
                       <p id="contact-address">Unit 23 – 6785 193rd Street <br/> Surrey, BC V4N 0Z4 <br/> Canada</p>
@@ -119,11 +120,11 @@
 
           <div class="theback container-fluid" >
             <div class="row top-row" style="background-image:url(images/project_papper.png)">
-              <img class="cbrne-logo" src="images/logo.png"/>
+              <img class="cbrne-logo" src="images/contact-images/logo.png"/>
               <div class="column-6">
                 <div class="row">
                   <div class="column-3">
-                    <img class="cbrne-icon chem-icon" src="images/cbrne-icons/chem.png"></img>
+                    <img class="cbrne-icon chem-icon" src="images/contact-images/cbrne-icons/chem.png"></img>
                   </div>
                   <div class="column-9">
                     <h3 class="cbrne-text">CHEMICAL</h3>
@@ -131,7 +132,7 @@
                 </div>
                 <div class="row">
                   <div class="column-3">
-                    <img class="cbrne-icon bio-icon" src="images/cbrne-icons/bio.png"/>
+                    <img class="cbrne-icon bio-icon" src="images/contact-images/cbrne-icons/bio.png"/>
                   </div>
                   <div class="column-9">
                     <h3 class="cbrne-text">BIOLOGICAL</h3>
@@ -139,7 +140,7 @@
                 </div>
                 <div class="row">
                   <div class="column-3">
-                    <img class="cbrne-icon radiological-icon" src="images/cbrne-icons/radiological.png"/>
+                    <img class="cbrne-icon radiological-icon" src="images/contact-images/cbrne-icons/radiological.png"/>
                   </div>
                   <div class="column-9">
                     <h3 class="cbrne-text">RADIOLOGICAL</h3>
@@ -151,7 +152,7 @@
               <div class="column-6">
                 <div class="row">
                   <div class="column-3">
-                    <img class="cbrne-icon nuclear-icon" src="images/cbrne-icons/nuclear.png"/>
+                    <img class="cbrne-icon nuclear-icon" src="images/contact-images/cbrne-icons/nuclear.png"/>
                   </div>
                   <div class="column-9">
                     <h3 class="cbrne-text nuclear-text">NUCLEAR</h3>
@@ -159,7 +160,7 @@
                 </div>
                 <div class="row">
                   <div class="column-3">
-                    <img class="cbrne-icon environmental-icon" src="images/cbrne-icons/environmental.png"/>
+                    <img class="cbrne-icon environmental-icon" src="images/contact-images/cbrne-icons/environmental.png"/>
                   </div>
                   <div class="column-9">
                     <h3 class="cbrne-text environmental-text">EVIRONMENTAL</h3>
@@ -195,7 +196,7 @@
 
       <div class="contact-info row">
         <div class="column-3">
-          <img src="images/head-icon.png" class="icon"/>
+          <img src="images/contact-images/cbrne-icons/head-icon.png" class="icon"/>
         </div>
         <div class="column-9">
           <p class="contact-data">Contact Us</p>
@@ -203,7 +204,7 @@
       </div>
       <div class="contact-info row">
         <div class="column-3">
-          <img src="images/phone-icon.png" class="icon"/>
+          <img src="images/contact-images/cbrne-icons/phone-icon.png" class="icon"/>
         </div>
         <div class="column-9">
           <p class="contact-data">+1.778.822.7024 </p>
@@ -211,7 +212,7 @@
       </div>
       <div class="contact-info row">
         <div class="column-3">
-          <img src="images/email-icon.png" class="icon"/>
+          <img src="images/contact-images/cbrne-icons/email-icon.png" class="icon"/>
         </div>
         <div class="column-9">
           <p class="contact-data">info@CBRNe.ca</p>
@@ -219,7 +220,7 @@
       </div>
       <div class="contact-info row">
         <div class="column-3">
-          <img src="images/globe-icon.png" class="icon"/>
+          <img src="images/contact-images/cbrne-icons/globe-icon.png" class="icon"/>
         </div>
         <div class="column-9">
           <p id="contact-address">Unit 23 – 6785 193rd Street <br/> Surrey, BC V4N 0Z4 <br/> Canada</p>
@@ -231,7 +232,7 @@
 
     <div class="footer-nav fixed-bottom">
       <div class =" site-info">
-        <div class="copyright-column">CBRNe</div>
+        <div class="copyright-column">CBRNe Response Canada | Saint Christopher’s Foundation (to be announced)</div>
         <div class="author-column">
           Site By Raymond Chen
         </div>

@@ -1,18 +1,12 @@
-.mission-body{
+.mission-body, .about-body, .affiliates-body{
   background-color: rgba(245,245,245,1);
   border-bottom: 20px rgba(255,255,255,1) solid;
-  padding: 100px 70px 50px 70px;
+  padding: 100px 10vw 50px 10vw;
   letter-spacing: 1px;
 
 }
 
-.about-body{
-  padding: 60px 70px 60px 70px;
-  background-color: rgba(245,245,245,1);
-  letter-spacing: 1px;
-}
-
-.about-body h1, .mission-body h1{
+.about-body h1, .mission-body h1, .affiliates-body h1{
   text-align: center;
   padding-bottom: 20px;
   color: rgba(0, 75, 150, 1);
@@ -32,12 +26,12 @@
 
 @media only screen and (min-width: 421px){
 
-  .about-body h1, .mission-body h1{
+  .about-body h1, .mission-body h1, .affiliates-body h1{
     text-align: center
   }
 
 
-  .about-body h5, .mission-body h5{
+  .about-body h5, .mission-body h5, .affiliates-body h5{
     display:none
   }
 }
@@ -48,13 +42,13 @@
     padding-top: 50px;
     padding-bottom: 50px
   }
-  .about-body h5, .mission-body h5{
+  .about-body h5, .mission-body h5 .affiliates-body h5{
     text-align: center;
     font-family: 'Lato', sans-serif;
     padding-bottom: 30px;
   }
 
-  .about-body h1, .mission-body h1{
+  .about-body h1, .mission-body h1, .affiliates-body h1{
     display:none
     }
 }

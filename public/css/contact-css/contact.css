@@ -1,9 +1,7 @@
-
-
 .maincontainer{
   position: absolute;
-  padding-top: 100px;
-  padding-bottom: 90px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   top: 60%;
   left: 50%;
   margin-top: 70px;
@@ -13,15 +11,13 @@
   animation-duration: 1s;
   animation-play-state: running;
   animation-fill-mode: forwards;
-  -webkit-perspective: 1500;
-  -moz-perspective: 1500;
-  -o-perspective: 1500;
-  perspective: 1500;
+  -webkit-perspective: 2000;
+  -moz-perspective: 2000;
+  -o-perspective: 2000;
+  perspective: 2000;
 }
 
-.contact-header{
-  margin-top: 10px;
-}
+
 
 .contact-note{
   font-family: 'Lato', sans-serif;
@@ -82,7 +78,8 @@
   height: 100%; */
   backface-visibility: hidden;
   overflow: hidden;
-  background: linear-gradient(to right, rgba(50,100,230,1) , rgba(100,100,100,1));
+  /* background: linear-gradient(to right, rgba(50,100,230,1) , rgba(100,100,100,1)); */
+  background-color: rgba(240,240,240,1);
   top: 0;
   left: 0;
   z-index: 3
@@ -247,6 +244,9 @@
   .contact{
     display: none;
   }
+  .contact-header{
+    padding: 0px;
+  }
 
   .container-fluid{
     margin-left: auto;
@@ -256,7 +256,8 @@
   .mini-card{
     width: 90vw;
     text-align: center;
-    transform: translate(0%,10%);
+    transform: translate(0%,20%);
+    margin-bottom: 20vh;
   }
 
   .contact-info{
@@ -265,9 +266,8 @@
 
   .contact-header{
     text-align: center;
-    padding-top: 60px;
+    padding-top: 30px;
     font-family:'Lato', sans-serif;
-    padding-bottom: 30px;
   }
 
   .contact-info img, .contact-info p{
@@ -277,7 +277,12 @@
 
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 470px) {
+
+  .contact-header{
+    padding-top: 40px;
+  }
+
   .mini-card{
     text-align: center;
     transform: translate(0%,0%);
