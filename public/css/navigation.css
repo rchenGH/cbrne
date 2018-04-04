@@ -90,7 +90,6 @@
 
 .nav-link{
   font-family: 'Lato', sans-serif;
-  /*font-family: 'Baloo', cursive;*/
   font-weight: 50;
   letter-spacing: 3px;
   color: rgba(0, 75, 150, 1);
@@ -124,7 +123,6 @@
 
 #header{
   color: rgba(0, 75, 150, 1);
-  font-family: 'Helvetica', sans-serif;
   font-size: 0.9em;
   /*font-family: 'Squada One', cursive;*/
 }
@@ -160,7 +158,6 @@
 
 #header{
   color: rgba(0, 75, 150, 1);
-  font-family: 'Helvetica', sans-serif;
   font-size: 0.9em;
 }
 

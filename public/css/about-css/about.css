@@ -16,7 +16,50 @@
 
 }
 
+.affiliate-a{
+  background-color: rgba(255,255,255,1);
+  height: 150px;
+  width: calc(95%/3);
+  text-align: center;
+  margin: calc(5%/6);
+  padding: 10px;
+  text-decoration: none;
+  color: rgba(0, 75, 150, 1);
 
+}
+
+.affiliate-a .name{
+  font-size: 1.2em;
+}
+
+.affiliate-a .location{
+  font-size: 0.8em;
+}
+
+.affiliate-a:hover{
+  box-shadow: 5px 5px 5px rgba(127,127,127,0.5);
+
+  text-decoration: none;
+  animation-name: affiliate-a;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-duration: 0.3s;
+}
+
+@keyframes affiliate-a {
+  0% {transform: scale(1);}
+
+  100% {transform: scale(1.075);}
+  100% {background:  rgba(50, 170, 200,0.5) }
+}
+
+
+
+.affiliate-card{
+  position: relative;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
 
 .about-body p, li, .mission-body{
   text-align: justify;
@@ -42,7 +85,7 @@
     padding-top: 50px;
     padding-bottom: 50px
   }
-  .about-body h5, .mission-body h5 .affiliates-body h5{
+  .about-body h5, .mission-body h5, .affiliates-body h5{
     text-align: center;
     font-family: 'Lato', sans-serif;
     padding-bottom: 30px;
@@ -51,4 +94,11 @@
   .about-body h1, .mission-body h1, .affiliates-body h1{
     display:none
     }
+}
+
+@media only screen and (max-width: 768px) {
+  .affiliate-a{
+    width: 100%;
+    min-width: 300px;
+  }
 }

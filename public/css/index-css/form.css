@@ -43,7 +43,11 @@ form{
   width: 90%;
 }
 
-input[type="text"]{
+textarea[type=text]{
+  height: 90px;
+}
+
+input[type="text"], textarea[type=text]{
   background-color: rgba(0, 75, 150, 0.1);
   color: rgba(0, 75, 150, 1);
   border-color: rgba(25,150,170,0);
@@ -51,7 +55,7 @@ input[type="text"]{
   border-radius: 0;
 }
 
-input[type="text"]::-webkit-input-placeholder {
+input[type="text"]::-webkit-input-placeholder , textarea[type=text]::-webkit-input-placeholder{
   color: rgba(150,150,150,1);
   font-size: 0.8em;
   font-family: 'Lato', sans-serif;
@@ -60,7 +64,7 @@ input[type="text"]::-webkit-input-placeholder {
 
 
 
-input[type=text]:focus {
+input[type=text]:focus, textarea[type=text]:focus {
   background-color: rgba(0, 75, 150, 0.3);
   color: rgba(0, 75, 150, 0.7);
   border-width:normal;
@@ -68,6 +72,8 @@ input[type=text]:focus {
   border-color: rgba(255,255,255,0.5);
   outline: 0;
 }
+
+
 
 
 #form-submit{
