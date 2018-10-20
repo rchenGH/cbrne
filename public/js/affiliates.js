@@ -17,9 +17,9 @@ $(document).ready(function() {
       location: "Canada"
     },
     {
-      name: "Rocky Mountain Environmental",
-      site: "http://spilldepot.com/",
-      location: "Canada"
+      name: "SpillTech",
+      site: "https://www.spilltech.com/",
+      location: "USA"
     },
     {
       name: "Caribbean Safety Products",
@@ -62,9 +62,9 @@ $(document).ready(function() {
       location: "United Kingdom and Global"
     },
     {
-      name: "Heidelberg Geo Bio Consult Fze.",
-      site: "http://hgbconsult.com/",
-      location: "Germany and Global"
+      name: "Rocky Mountain Environmental",
+      site: "http://spilldepot.com/",
+      location: "Canada"
     },
     {
       name: "Global Spill Response",
