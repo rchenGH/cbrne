@@ -1,6 +1,5 @@
 {
   "projects": {
-    "default": "cbrne-a2a9b",
-    "production": "cbrne-90250"
+    "staging": "cbrne-1a32b"
   }
 }
