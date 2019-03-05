@@ -26,11 +26,11 @@ $(document).ready(function(){
                       message_input: $message
     });
 
-    $('#input_first_name').val(" ");
-    $('#input_last_name').val(" ");
-    $('#input_email').val(" ");
-    $('#input_phone').val(" ");
-    $('#input_message').val(" ");
+    $('#input_first_name').val("");
+    $('#input_last_name').val("");
+    $('#input_email').val("");
+    $('#input_phone').val("");
+    $('#input_message').val("");
   });
 
   firebaseRef.on('child_added', function(data){
